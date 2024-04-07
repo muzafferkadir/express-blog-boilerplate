@@ -20,6 +20,16 @@ const doc = {
     },
   ],
   schemes: ['http', 'https'],
+  servers: [
+    {
+      url: 'https://express-blog-boilerplate.onrender.com/',
+      description: 'dev server',
+    },
+    {
+      url: 'http://0.0.0.0:3000/',
+      description: 'local server',
+    },
+  ],
 };
 
 const outputFile = './swagger-output.json';
