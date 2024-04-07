@@ -20,10 +20,6 @@ This boilerplate provides a foundation for building a blog API using Express.js 
 ## Installation
 
 1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/express-blog-boilerplate.git
-   ```
-
 2. Navigate to the project directory:
    ```bash
    cd express-blog-boilerplate
@@ -105,4 +101,4 @@ Install the recommended extensions:
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/muzafferkadir/express-blog-boilerplate/blob/main/LICENCE) file for details.
