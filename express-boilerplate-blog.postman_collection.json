@@ -1,0 +1,208 @@
+{
+	"info": {
+		"_postman_id": "4f174d10-96bd-4b50-ac4c-95e701198645",
+		"name": "express-boilerplate-blog",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13600079",
+		"_collection_link": "https://banausta.postman.co/workspace/Banausta~e5b34a2e-1e8f-4f56-9f0b-4bc0a869ccd0/collection/13600079-4f174d10-96bd-4b50-ac4c-95e701198645?action=share&source=collection_link&creator=13600079"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"username\": \"admin\",\n  \"password\": \"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/user/login",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"user",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"an23y\",\n  \"content\": \"an23y\",\n  \"tags\": [\"a2ny3\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/post/",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"post",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Post",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"an23y\",\n  \"content\": \"rrrrr\",\n  \"tags\": [\"a2ny3\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/post/6611d8aaac3598d8aa84f2b8",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"post",
+						"6611d8aaac3598d8aa84f2b8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Post",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/post/6611da77845c5d5ff6ffeaa0",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"post",
+						"6611da77845c5d5ff6ffeaa0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Post",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:3000/post?page=1&limit=4",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "3000",
+					"path": [
+						"post"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Detail Post",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://0.0.0.0:3000/post/6611d8a7ac3598d8aa84f2ae",
+					"protocol": "http",
+					"host": [
+						"0",
+						"0",
+						"0",
+						"0"
+					],
+					"port": "3000",
+					"path": [
+						"post",
+						"6611d8a7ac3598d8aa84f2ae"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwicm9sZSI6ImFkbWluIiwiaWF0IjoxNzEyNDQ1MDM0LCJleHAiOjE3MTI0NTIyMzR9.UW1h0NvSmUwAiCFQqCQstaekh2SZjY3q0PBWedpMls",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL",
+			"value": "http://0.0.0.0:3000",
+			"type": "string"
+		}
+	]
+}
